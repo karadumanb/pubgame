@@ -12,6 +12,7 @@
 	1. GENERAL STRUCTURES
 ################################################################# */
 $primary: #061e30;
+$white: #ffffff;
 
 * {
   margin: 0;
@@ -20,7 +21,7 @@ $primary: #061e30;
 }
 
 body {
-  background: #fff;
+  background: $white;
   margin: 0;
   color: #444;
 }
@@ -51,72 +52,13 @@ body {
   height: 100%;
 }
 
-.alignleft {
-  float: left;
+.mt-40 {
+  margin-top: 40px;
 }
 
-.alignright {
-  float: right;
-}
-
-.aligncenter {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  clear: both;
-}
-
-.centered {
-  text-align: center;
-}
-
-.mt {
-  margin-top: 50px;
-}
-
-.mb {
-  margin-bottom: 50px;
-}
-
-.mtb {
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-.ptb {
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
-
-.clear {
-  clear: both;
-  display: block;
-  font-size: 0;
-  height: 0;
-  line-height: 0;
-  width: 100%;
-}
-
-::-moz-selection {
-  color: #fff;
-  text-shadow: none;
-  background: #2b2e31;
-}
-
-::selection {
-  color: #fff;
-  text-shadow: none;
-  background: #2b2e31;
-}
-
-*,
-*:after,
-*:before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+.my-40 {
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 a {
@@ -136,9 +78,7 @@ a:focus {
   color: #696e74;
 }
 
-/* HEADER CONFIGURATION */
-
-#header {
+.banner-section {
   background: $primary;
   padding-top: 80px;
   padding-bottom: 80px;
@@ -146,19 +86,19 @@ a:focus {
   color: #ccc;
 }
 
-#header h2 {
+.banner-section h2 {
   color: #5dca88;
   font-size: 36px;
   line-height: 48px;
 }
 
-#header h3 {
+.banner-section h3 {
   color: #ccc;
   font-weight: 400;
   font-size: 28px;
 }
 
-#header hr {
+.banner-section hr {
   width: 20%;
   border-bottom: 3px solid #ccc;
 }
@@ -168,7 +108,7 @@ a:focus {
 }
 
 @media (max-width: 768px) {
-  #header {
+  .banner-section {
     padding-top: 0;
     padding-bottom: 20px;
   }
@@ -190,7 +130,7 @@ a:focus {
 }
 
 .btn-trans:hover {
-  background: white;
+  background: $white;
   color: #444;
 }
 
@@ -212,15 +152,15 @@ a:focus {
   font-style: italic;
 }
 
-/* SUBSCRIBE FORM*/
+/* SUBSCRIBE SECTION */
 
-#subscribe {
+section.subscribe {
   background: $primary;
   padding-top: 100px;
   padding-bottom: 100px;
 }
 
-#subscribe input {
+section.subscribe input {
   font-size: 18px;
   min-height: 60px;
   border-radius: 40px;
@@ -228,12 +168,12 @@ a:focus {
   padding: 16px 30px 20px;
   border: none;
   margin-bottom: 10px;
-  background-color: #fff;
+  background-color: $white;
   -webkit-transition: background-color 0.2s;
   transition: background-color 0.2s;
 }
 
-#subscribe .subscribe-input {
+section.subscribe .subscribe-input {
   float: left;
   width: 100%;
   text-align: left;
@@ -242,28 +182,27 @@ a:focus {
   }
 }
 
-#subscribe .subscribe-submit {
+section.subscribe .subscribe-submit {
   position: absolute;
   right: 10px;
   border-radius: 50px;
+  border-radius: 40px;
 }
 
-.btn-green2 {
-  color: #fff;
+.btn-second {
+  color: $white;
   font-size: 18px;
   min-height: 60px;
-  border-radius: 40px;
   text-decoration: none;
   display: inline-block;
   line-height: 24px;
   padding: 16px 30px 20px;
-  z-index: 1;
   position: relative;
   border: none;
   background: #5dca88;
 }
 
-.btn-green2:hover {
+.btn-second:hover {
   background: #21b191;
   color: white;
 }
@@ -287,11 +226,11 @@ a:focus {
   color: #8c9494;
 }
 
-#contact {
+section.contact {
   padding: 40px 0;
 }
 
-#contact h2 {
+section.contact h2 {
   margin-bottom: 30px;
 }
 
@@ -306,18 +245,6 @@ a:focus {
 
 .contact-form .form-send {
   text-align: center;
-}
-
-.contact-form .form-send button {
-  background: #5dca88;
-  border: 0;
-  padding: 14px 40px;
-  color: #fff;
-  transition: 0.4s;
-  cursor: pointer;
-  border-radius: 50px;
-  font-size: 16px;
-  margin-top: 15px;
 }
 
 .contact-form .form-send button:hover {
