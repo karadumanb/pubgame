@@ -42,6 +42,7 @@ server '138.68.97.43', user: 'deploy', roles: %w{app db web}
 # Global options
 # --------------
  set :ssh_options, {
+   keys: %w(/home/baturaykaraduman/.ssh/id_rsa),
    port: 3000
  }
 #
