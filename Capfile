@@ -9,7 +9,7 @@ require 'capistrano/passenger'
 require 'capistrano/rbenv'
 
 set :rbenv_type, :user
-set :rbenv_ruby, '2.7.1'
+set :rbenv_ruby, '2.7.2'
 
 # Load the SCM plugin appropriate to your project:
 #
@@ -43,3 +43,7 @@ install_plugin Capistrano::SCM::Git
 
 # Load custom tasks from `lib/capistrano/tasks` if you have any defined
 Dir.glob("lib/capistrano/tasks/*.rake").each { |r| import r }
+
+
+# ssh root@138.68.97.43
+# cap production deploy
