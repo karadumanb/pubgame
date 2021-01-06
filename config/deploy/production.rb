@@ -7,7 +7,7 @@
 # server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
 # server "db.example.com", user: "deploy", roles: %w{db}
 
-server '138.68.97.43', user: 'deploy', roles: %w{app db web}
+server '138.68.97.43', user: 'deploy', roles: %w{app db web}, port: 3000
 
 # role-based syntax
 # ==================
@@ -41,9 +41,9 @@ server '138.68.97.43', user: 'deploy', roles: %w{app db web}
 #
 # Global options
 # --------------
- set :ssh_options, {
-   port: 3000
- }
+#  set :ssh_options, {
+#    port: 3000
+#  }
 #
 # The server-based syntax can be used to override options:
 # ------------------------------------
