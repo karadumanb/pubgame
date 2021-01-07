@@ -1,8 +1,8 @@
 # config valid for current version and patch releases of Capistrano
 lock "~> 3.14.1"
 
-set :application, "pubgame"
-set :repo_url, "https://github.com/karadumanb/pubgame.git"
+set :application, "spaceocean"
+set :repo_url, "https://github.com/karadumanb/spaceocean.git"
 
 # Deploy to the user's home directory
 set :deploy_to, "/home/deploy/#{fetch :application}"
